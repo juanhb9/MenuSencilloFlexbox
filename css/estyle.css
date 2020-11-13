@@ -1,0 +1,52 @@
+.contenedor{
+    background-color: #ffffff;
+    min-height: calc(100vh - 20px);
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px 30px 0 30 px;
+}
+/* color del menu */
+nav{
+    background-color: #3F51B5; 
+}
+/* estilos de la lista */
+nav ul{                     
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+/* espaciado de los elementos */
+nav ul li{
+    padding: 20px;  
+}
+/* Formato de la fuente elementos a */
+nav ul a{
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.4rem;
+}
+
+nav ul li:hover{
+    background-color: #1a2770;
+}
+/* Propiedades Flexbox */
+.sencillo ul{
+    display: flex;
+    justify-content: flex-end;
+   /*  justify-content: space-between; centra la navegacion*/
+    flex-direction: column; 
+}
+
+.sencillo ul li{
+    text-align: center; /* Centrar */
+    margin-bottom:.5rem ;
+}
+/* media queris */
+@media screen and (min-width:768px){
+    .sencillo ul{
+        flex-direction: row;
+    }
+    .sencillo ul li{
+        margin-bottom: 0;
+    }
+}
